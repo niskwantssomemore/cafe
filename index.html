@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофе & Книги | Кафе-библиотека</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Кофе & Книги</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#features">Особенности</a></li>
+                    <li><a href="#reservation">Бронь</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                <button class="burger-menu" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="hero-title">Кофе & Книги — место, где рождаются идеи</h1>
+                <p class="hero-subtitle">Уютное кафе с атмосферой домашней библиотеки</p>
+                <a href="#menu" class="btn">Посмотреть меню</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">О нашем кафе</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Мы объединили ароматный кофе, вкусные десерты и хорошие книги в одном пространстве. Идеальное место для работы, чтения или встречи с друзьями.</p>
+                        <p>В нашей коллекции более 500 книг разных жанров, которые можно читать прямо в кафе.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Интерьер кафе">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Наше меню</h2>
+                <div class="tabs">
+                    <button class="tab active" data-category="coffee">Кофе</button>
+                    <button class="tab" data-category="desserts">Десерты</button>
+                    <button class="tab" data-category="breakfasts">Завтраки</button>
+                </div>
+                <div class="menu-items active" id="coffee">
+                </div>
+                <div class="menu-items" id="desserts">
+                </div>
+                <div class="menu-items" id="breakfasts">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Уютная атмосфера</h3>
+                        <p>Тихая, спокойная обстановка с мягкими диванами и хорошим освещением для чтения.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🍰</div>
+                        <h3>Свежая выпечка</h3>
+                        <p>Каждое утро наши кондитеры готовят свежие десерты и выпечку по домашним рецептам.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📶</div>
+                        <h3>Бесплатный Wi-Fi</h3>
+                        <p>Высокоскоростной интернет для работы или учебы. Розетки у каждого столика.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation">
+            <div class="container">
+                <h2 class="section-title">Забронировать столик</h2>
+                <form class="reservation-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="date" required>
+                    <input type="time" required>
+                    <input type="number" placeholder="Количество гостей" min="1" max="10" required>
+                    <button type="submit" class="btn">Забронировать</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contacts-grid">
+                    <div class="contact-info">
+                        <h3>Адрес</h3>
+                        <p>ул. Книжная, 15, г. Москва</p>
+                        <h3>Телефон</h3>
+                        <p>+7 (495) 123-45-67</p>
+                        <h3>Часы работы</h3>
+                        <p>Пн-Пт: 8:00-22:00</p>
+                        <p>Сб-Вс: 9:00-23:00</p>
+                    </div>
+                    <div class="map-placeholder">
+                        <p>Здесь будет карта</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Кофе & Книги</div>
+                <div class="social-links">
+                    <a href="#" aria-label="ВКонтакте">VK</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Telegram">TG</a>
+                </div>
+                <p class="copyright">&copy; 2023 Кафе "Кофе & Книги". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Спасибо за бронирование!</h2>
+            <p>Мы свяжемся с вами в ближайшее время для подтверждения.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
