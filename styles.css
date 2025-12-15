@@ -307,13 +307,6 @@ p {
 .contacts {
     padding: 80px 20px;
     background-color: var(--light-color);
-    align-items: center;
-}
-
-.contacts-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
 }
 
 /* Футер */
@@ -402,8 +395,7 @@ p {
     }
     
     .about-content,
-    .features-grid,
-    .contacts-grid {
+    .features-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
