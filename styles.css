@@ -307,21 +307,13 @@ p {
 .contacts {
     padding: 80px 20px;
     background-color: var(--light-color);
+    align-items: center;
 }
 
 .contacts-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-}
-
-.map-placeholder {
-    background-color: #ddd;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
 }
 
 /* Футер */
